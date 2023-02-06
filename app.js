@@ -14,9 +14,14 @@ const port = 3000;
 
 // });
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/index.html'));
-});
+// app.get('/', (req, res) => {
+//     //res.sendFile(path.join(__dirname, 'public'));
+//     res.sendFile(path.join(__dirname, '/index.html'));
+//     res.sendFile(path.join(__dirname, '/styles.css'));
+    
+// });
+
+app.use(express.static("public"));
 app.listen(port);
 
 module.exports = app;
