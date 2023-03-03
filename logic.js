@@ -1,4 +1,4 @@
-let answer = 2 + 2;
+//let answer = 2 + 2;
 
 function sum(a, b) {
     return a + b;
